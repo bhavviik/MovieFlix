@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.MainLogo {
+    height: 40px;
+    width: 200px;
+}
+
+.Search-Box {
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    margin-right: 10px;
+    padding-right: 0px;
+}
+
+.log-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.search-box {
+    text-align: left;
+    height: 20px;
+    width: 250px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    background: transparent;
+}
+
+.btn-search:focus {
+    outline: none;
+    border: none;
+}
+
+/* ------------  Header Section   -------------------*/
+
+.Main-Header-Div {
+    height: 94vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.MainPoster {
+    height: 90%;
+    width: 30%;
+    border-radius: 1rem;
+    margin: 35px;
+}
+
+.Main-Header-Div div {
+    align-items: center;
+}
+
+.Header-Movie-Details {
+    width: 65%;
+}
+
+.Main-Header-Div .MovieTitle {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.Main-Header-Div .MovieRating {
+    display: flex;
+    flex-direction: row;
+}
+
+.Main-Header-Div .MovieOverView {
+    margin-left: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ReleaseDate {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.MovieRating div {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.Container-TopCast .Cast-Card {
+    display: flex;
+    flex-direction: row;
+}
+
+.Button-Group-Main-header {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Second-Container {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+/* ----------------- Top rated Movies ------------------------*/
+
+.TopRated-Movies-Header {
+    width: 100%;
+    height: 50vh;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/7fb62e44-31fd-4e1f-b6ad-0b5c8c2a20ef/IN-en-20231009-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    border-radius: 1rem;
+    border: 1px solid black;
+
+}
+
+.TopRated-Movies-Title {
+    font-size: 100px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 25%;
+    margin-right: 25%;
+    opacity: 100%;
+}
+
+.Main-TopRated-Div {
+    margin: 30px;
+}
+
+.Movies-TopRated {
+    margin: 20px;
+}
+
+
+/*------------------ Explore Page CSS -------------------------------*/
+.Genre-Buttons{
+    margin: 4px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    color: rgb(0, 0, 0);
+    width: auto;
+    padding: 0px 20px 10px 10px;
+    font-size: large;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.Genre-Buttons label input{
+    display: none;
+}
+.Genre-Buttons input:checked + span{
+    color: #fa0000;
+}
