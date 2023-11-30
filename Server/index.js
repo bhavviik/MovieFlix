@@ -78,17 +78,16 @@ app.delete("/deleteList/:listID", (req,res) => {
   }
 })
 
-app.post("/GetListItem", async (req,res) => {
-  const ID = req.body;
+app.post("/GetlistMovies" , async(req,res) =>{
+  const listID = req.body.listID;
   try{
-    const list = await ListModel.find({ userID : ID.userID});
-    res.send({ status: "ok" , data: list});
+    const listMovie = await AddMovieTolistModel.find({ listID : listID});
+    res.send({data : listMovie})
   }
-  catch(Err){ 
-    console.log(Err)
+  catch(err){
+    console.log(err)
   }
 })
-
 
 app.listen(3001, () => {
   console.log("server is running");

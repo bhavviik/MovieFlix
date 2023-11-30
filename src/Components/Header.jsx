@@ -242,7 +242,7 @@ export default function Header() {
                                     <p className='text-xl ml-2 font-bold flex w-[200px]'>{listItem.listName}</p>
                                     <div className='pt-1'>
                                       <button className='mr-2' onClick={() => deleteList({listID : listItem._id})}><Trash size={20}></Trash></button>
-                                      <button onClick={() => addMovieTolist({ MovieID: MovieDetails.id, ListID: listItem._id })}><Plus size={20}></Plus></button>
+                                      <button onClick={() => addMovieTolist({listID : listItem._id, movieID: MovieDetails.id})}><Plus size={20}></Plus></button>
                                     </div>
                                   </div>
                                 </li>
